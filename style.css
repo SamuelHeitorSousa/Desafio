@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://wallpapers.com/images/featured/natal-8k-orbp2fajkl95dftr.jpg);
+  }
+  
+  .flex {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+    isolation: isolate;
+  }
+  
+  .floco {
+    opacity: 0%;
+    background-image: url(img/—Pngtree—white\ snowflake\ free\ illustration_4450872.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5vh;
+    width: 5vw;
+    animation-name: cair;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .floco:nth-child(1) {
+    left: 10%;
+    animation-duration: 5s, 3s;
+    animation-delay: 0s, 0s;
+  }
+  
+  .floco:nth-child(2) {
+    left: 25%;
+    animation-duration: 8s, 4s;
+    animation-delay: 1s, 0.5s;
+  }
+  
+  .floco:nth-child(3) {
+    left: 40%;
+    animation-duration: 4s, 2s;
+    animation-delay: 0.5s, 1s;
+  }
+  
+  .floco:nth-child(4) {
+    left: 55%;
+    animation-duration: 7s, 3.5s;
+    animation-delay: 2s, 0s;
+  }
+  
+  .floco:nth-child(5) {
+    left: 70%;
+    animation-duration: 6s, 2.5s;
+    animation-delay: 1.5s, 1.5s;
+  }
+  
+  .floco:nth-child(6) {
+    left: 85%;
+    animation-duration: 9s, 4.5s;
+    animation-delay: 0s, 2s;
+  }
+  
+  .floco:nth-child(7) {
+    left: 15%;
+    animation-duration: 5.5s, 3s;
+    animation-delay: 3s, 0.5s;
+  }
+  
+  .floco:nth-child(8) {
+    left: 45%;
+    animation-duration: 4.5s, 2.2s;
+    animation-delay: 2.5s, 0s;
+  }
+  
+  .floco:nth-child(9) {
+    left: 65%;
+    animation-duration: 7.5s, 4s;
+    animation-delay: 0.8s, 1.2s;
+  }
+  
+  .floco:nth-child(10) {
+    left: 90%;
+    animation-duration: 6.2s, 2.8s;
+    animation-delay: 1.2s, 0.3s;
+  }
+  
+  @keyframes cair {
+    0% {
+      opacity: 0%;
+      transform: rotateZ(0deg);
+    }
+  
+    100% {
+      margin-top: 100vh;
+      opacity: 100%;
+      transform: rotateZ(720deg);
+    }
+  }
+  
+  .flex2 {
+    display: flex;
+  }
+  
+  .iflogo {
+    background-image: url(img/Instituto_Federal_de_São_Paulo_-_Marca_Vertical_2015.svg.webp);
+    background-size: cover;
+    width: 20vw;
+    height: 40vh;
+  
+  }
+  @keyframes logo{
+    from{
+      backface-visibility: hidden;
+    }
+    to{
+      backface-visibility: visible;
+    }
+  }
+  .conteiner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .carta-area {
+    position: relative;
+    width: 320px;
+    height: 220px;
+  }
+  
+  .carta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fechada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/73/73756.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: girar 4s forwards;
+  }
+  
+  .aberta {
+    background-image: url(https://radiotabajara.pb.gov.br/imagens-acesso-rapido/icone-carta-anual.png/@@images/511f1ad5-f499-4ede-a73a-2c39aa24ab5a.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: aparecer 1s 1.5s forwards;
+  }
+  
+  .texto {
+    width: 260px;
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+    opacity: 0;
+    animation: subir 1s 2.5s forwards;
+  }
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(12800deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes subir {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
